@@ -32,8 +32,6 @@ function AboutPage() {
 
   ];
   const containerRef = useRef()
-
-  const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef(null);

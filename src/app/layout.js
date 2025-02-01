@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar.jsx";
 import TransitionProvider from "@/components/TransitionProvider";
 import "./globals.css";
 
