@@ -61,8 +61,9 @@ function AboutPage() {
             <h1 className="text-5xl font-extrabold">BIOGRAPHY</h1>
             {/* Biography DESC  */}
             <p className="text-lg text-white">
-            I'm Shivam Verma, a backend developer passionate about building efficient and scalable web applications. With experience in Node.js, Express.js, and databases like MongoDB and SQL, I develop secure, high-performance systems. My work spans full-stack projects, from task management platforms to interactive coding environments. Always exploring new technologies, I focus on creating seamless digital experiences through clean, maintainable code.
-            </p>
+  {"I'm Shivam Verma, a backend developer passionate about building efficient and scalable web applications..."}
+</p>
+
             {/* Biography Quote  */}
             <span className="italic text-white">
             Crafting reliable code to build the future, one project at a time.
