@@ -129,7 +129,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-6xl text-center font-extrabold">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-6xl text-center font-extrabold text-white">
           Scroll Down to see My work <br />
         
         </div>

@@ -58,8 +58,8 @@ const Navbar = () => {
       {/* LOGO */}
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <a
-          href="/resume.docx" // Ensure the file path is correct and accessible in the `public` folder
-          download="Shivamverma_Resume.docx" // Force download with a specified file name
+          href="/resume.pdf" // Ensure the file path is correct and accessible in the `public` folder
+          download="Shivamverma_Resume.pdf" // Force download with a specified file name
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center border-gray-500 border-2"
         >
           <span className="text-white mr-1">Download</span>
@@ -71,32 +71,32 @@ const Navbar = () => {
 
       {/* Social handles */}
       <div className="hidden md:flex gap-4 w-1/3 md:w-1/2">
-        <Link href="https://github.com/Thunder2367shiv" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/github.png" alt="" width={20} height={20} />
+        <Link href="https://github.com/Thunder2367shiv">
+          <Image src="/github.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://www.instagram.com/thunder11.21/" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/instagram.png" alt="" width={20} height={20} />
+        <Link href="https://www.instagram.com/thunder11.21/">
+          <Image src="/instagram.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://www.linkedin.com/in/shivam-verma-711463257/" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/linkedin.png" alt="" width={20} height={20} />
+        <Link href="https://www.linkedin.com/in/shivam-verma-711463257/">
+          <Image src="/linkedin.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://leetcode.com/Thunderk11/" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/leetcode.png" alt="" width={20} height={20} />
+        <Link href="https://leetcode.com/Thunderk11/">
+          <Image src="/leetcode.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://codeforces.com/profile/coder_thunder" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/codeforces.png" alt="" width={20} height={20} />
+        <Link href="https://codeforces.com/profile/coder_thunder">
+          <Image src="/codeforces.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://www.geeksforgeeks.org/user/shivamve16ur/" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/gfg.png" alt="" width={20} height={20} />
+        <Link href="https://www.geeksforgeeks.org/user/shivamve16ur/">
+          <Image src="/gfg.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://www.codechef.com/users/shivam13579ver" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/codechef.jpeg" alt="" width={20} height={20} />
+        <Link href="https://www.codechef.com/users/shivam13579ver">
+          <Image src="/codechef.jpeg" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://www.hackerrank.com/shivamverma1022" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/hackerrank.png" alt="" width={20} height={20} />
+        <Link href="https://www.hackerrank.com/shivamverma1022">
+          <Image src="/hackerrank.png" alt="" width={30} height={20} />
         </Link>
-        <Link href="https://www.codingninjas.com/studio/profile/8e0a5011-033d-441a-aa97-fe0be920bcfc" className="border-spacing-1 border-black border-4 border-dotted">
-          <Image src="/codingninja.jpeg" alt="" width={20} height={20} />
+        <Link href="https://www.codingninjas.com/studio/profile/8e0a5011-033d-441a-aa97-fe0be920bcfc">
+          <Image src="/codingninja.jpeg" alt="" width={30} height={20} />
         </Link>
       </div>
 

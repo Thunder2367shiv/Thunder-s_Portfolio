@@ -136,6 +136,17 @@ function AboutPage() {
                   organization: "CBSE",
                 },
                 {
+                  title: "Senior Secondary School Certificate",
+                  description: "Passed from City Convent Senior Secondary School Atrauli, Aligarh  with overall 93.4 Percentage",
+                  date: "Year: 2021",
+                  organization: "CBSE",
+                },
+                {
+                  title: "Coding Contest",
+                  description: "Achieved a title 'Pupil' on Codeforces and ranked 3520.",
+                  organization: "CodeChef",
+                },
+                {
                   title: "Coding Contest",
                   description: "Achieved a 3-star rating on CodeChef and ranked 295th globally in the CodeChef Starters 149 contest.",
                   organization: "CodeChef",
