@@ -23,7 +23,7 @@ const Homepage = ({ openNavbar }) => {
 
   return (
     <motion.div
-      className="h-full bg-gradient-to-br text-white"
+      className="h-full bg-gradient-to-br text-white overflow-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
