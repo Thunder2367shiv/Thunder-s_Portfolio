@@ -32,7 +32,7 @@ const Homepage = ({ openNavbar }) => {
       <div className={`h-full flex flex-col lg:flex-row px-6 sm:px-10 md:px-16 xl:px-32 ${openNavbar ? "hidden" : "flex"}`}>
         
         {/* Left Section - Text Content */}
-        <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-4 sm:mt-8">
+        <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-6">
 
 <Image 
               src="/bin.gif" 
@@ -62,7 +62,7 @@ const Homepage = ({ openNavbar }) => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full justify-start mb-4">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full justify-start mb-6">
             <motion.button
               className="w-full sm:w-auto px-6 py-3 rounded-full text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-500 hover:scale-105 transition transform shadow-lg"
               whileHover={{ scale: 1.1 }}
