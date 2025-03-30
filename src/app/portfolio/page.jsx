@@ -408,29 +408,23 @@ const PortfolioPage = () => {
         }}
           className="relative z-10">
           <motion.svg
-            animate={{
-            rotate: 360
-          }}
-            transition={{
-            duration: 12,
-            ease: "linear",
-            repeat: Infinity
-          }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-[500px] xl:h-[500px]">
+            className="w-64 h-64 md:w-[500px] md:h-[500px]"
+          >
             <defs>
               <path
                 id="circlePath"
-                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0"/>
+                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+              />
             </defs>
-            <text
-              fill="#fff"
-              className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">
-              <textPath href="#circlePath" startOffset="0%">
-                Back-end Developer&#160;&#160;•&#160;&#160;Problem Solver&#160;&#160;&#160;•
-              </textPath>
+            <text fill="#fff"> {/* Change this to white */}
+              <textPath href="#circlePath" className="text-xl">
+              Back-end Developer&#160;•&#160;Problem Solver&#160;•
+             </textPath>
             </text>
-          </motion.svg>
+           </motion.svg>
           <Link
             href="/contact"
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -452,3 +446,35 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
+
+
+{/* <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-black text-white overflow-hidden">
+        <h1 className="text-8xl">Do you have a project?</h1>
+        <div className="relative">
+          <motion.svg
+            animate={{ rotate: 360 }}
+            transition={{ duration: 8, ease: "linear", repeat: Infinity }}
+            viewBox="0 0 300 300"
+            className="w-64 h-64 md:w-[500px] md:h-[500px]"
+          >
+            <defs>
+              <path
+                id="circlePath"
+                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+              />
+            </defs>
+            <text fill="#fff"> {/* Change this to white */}
+          //     <textPath href="#circlePath" className="text-xl">
+          //       Back-end Developer and Coder
+          //    </textPath>
+          //   </text>
+          //  </motion.svg>
+          //  <Link
+          //   href="/contact"
+          //   className="font-extrabold w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-white text-black rounded-full flex items-center justify-center"
+          // >
+          //   Hire Me
+          // </Link>
+      //   </div>
+      // </div>  */}
