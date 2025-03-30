@@ -32,7 +32,7 @@ const Homepage = ({ openNavbar }) => {
       <div className={`h-full flex flex-col lg:flex-row px-6 sm:px-10 md:px-16 xl:px-32 ${openNavbar ? "hidden" : "flex"}`}>
         
         {/* Left Section - Text Content */}
-        <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-4">
+        <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-4 sm:mt-8">
 
 <Image 
               src="/bin.gif" 
@@ -101,7 +101,7 @@ const Homepage = ({ openNavbar }) => {
           </motion.div>
         </div>
 
-        <div className=" mt-3 h-1/2 lg:h-full lg:w-2/6 flex sm:hidden items-center justify-center">
+        <div className=" mt-6 h-1/2 lg:h-full lg:w-2/6 flex sm:hidden items-center justify-center">
   {/* Social handles */}
   <div className="flex gap-4">
     <Link href="https://github.com/Thunder2367shiv">
