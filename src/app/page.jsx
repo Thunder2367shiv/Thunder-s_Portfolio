@@ -38,7 +38,7 @@ const Homepage = ({ openNavbar }) => {
               alt="Hero Image" 
               width={1000} 
               height={100} 
-              className="rounded-lg w-full max-w-[90%] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[150px] object-cover mt-36 lg:mt-16"
+              className="rounded-lg w-full max-w-[85%] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[150px] object-cover mt-36 lg:mt-16"
               priority
             />
 
