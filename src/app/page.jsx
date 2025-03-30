@@ -51,7 +51,7 @@ const Homepage = ({ openNavbar }) => {
             Welcome to My Portfolio
           </motion.h1>
 
-          <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-left text-gray-200">
+          <h1 className="text-lg sm:text-3xl md:text-3xl font-bold text-left text-gray-200">
             {displayedText}
           </h1>
 
