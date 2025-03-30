@@ -45,7 +45,7 @@ const Homepage = ({ openNavbar }) => {
 
 
           <motion.h1
-            className="text-3xl sm:text-sm md:text-5xl lg:text-6xl font-extrabold text-left text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-5"
+            className="text-3xl sm:text-2xl md:text-4xl lg:text-6xl font-extrabold text-left text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -53,11 +53,11 @@ const Homepage = ({ openNavbar }) => {
             Welcome to My Portfolio
           </motion.h1>
 
-          <h1 className="text-2xl sm:text-sm md:text-4xl font-bold text-left text-gray-200">
+          <h1 className="text-2xl sm:text-xl md:text-3xl font-bold text-left text-gray-200">
             {displayedText}
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 text-left leading-relaxed">
+          <p className="text-base sm:text-sm md:text-xl text-gray-400 text-left leading-relaxed">
             Welcome to my backend playground, where logic meets efficiency. With a passion for scalable architecture and clean code, my portfolio showcases robust systems, optimized APIs, and backend solutions designed for performance and reliability.
           </p>
 
