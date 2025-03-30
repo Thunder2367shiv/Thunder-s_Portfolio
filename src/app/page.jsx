@@ -29,7 +29,7 @@ const Homepage = ({ openNavbar }) => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className={`h-full flex flex-col lg:flex-row px-6 sm:px-10 md:px-16 xl:px-32 ${openNavbar ? "hidden" : "flex"}`}>
+      <div className={`h-full flex flex-col mb-2 lg:flex-row px-6 sm:px-10 md:px-16 xl:px-32 ${openNavbar ? "hidden" : "flex"}`}>
         
         {/* Left Section - Text Content */}
         <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-6">
