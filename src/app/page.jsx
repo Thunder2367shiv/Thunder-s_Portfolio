@@ -45,7 +45,7 @@ const Homepage = ({ openNavbar }) => {
 
 
           <motion.h1
-            className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-left text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-5"
+            className="text-3xl sm:text-2xl md:text-5xl lg:text-6xl font-extrabold text-left text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -53,7 +53,7 @@ const Homepage = ({ openNavbar }) => {
             Welcome to My Portfolio
           </motion.h1>
 
-          <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold text-left text-gray-200">
+          <h1 className="text-2xl sm:text-xl md:text-4xl font-bold text-left text-gray-200">
             {displayedText}
           </h1>
 
@@ -101,7 +101,7 @@ const Homepage = ({ openNavbar }) => {
           </motion.div>
         </div>
 
-        <div className="h-1/2 lg:h-full lg:w-2/6 flex sm:hidden items-center justify-center">
+        <div className=" mt-3 h-1/2 lg:h-full lg:w-2/6 flex sm:hidden items-center justify-center">
   {/* Social handles */}
   <div className="flex gap-4">
     <Link href="https://github.com/Thunder2367shiv">
