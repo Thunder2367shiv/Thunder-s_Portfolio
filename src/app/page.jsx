@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Homepage = ({ openNavbar }) => {
   const router = useRouter();
@@ -31,7 +32,7 @@ const Homepage = ({ openNavbar }) => {
       <div className={`h-full flex flex-col lg:flex-row px-6 sm:px-10 md:px-16 xl:px-32 ${openNavbar ? "hidden" : "flex"}`}>
         
         {/* Left Section - Text Content */}
-        <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-4 sm:mt-0">
+        <div className="h-1/2 flex flex-col lg:h-full lg:w-4/6 gap-3 sm:gap-5 md:gap-6 items-start justify-center mt-4">
 
 <Image 
               src="/bin.gif" 
@@ -44,7 +45,7 @@ const Homepage = ({ openNavbar }) => {
 
 
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-left text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-5"
+            className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold text-left text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
@@ -52,7 +53,7 @@ const Homepage = ({ openNavbar }) => {
             Welcome to My Portfolio
           </motion.h1>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-left text-gray-200">
+          <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold text-left text-gray-200">
             {displayedText}
           </h1>
 
@@ -99,6 +100,41 @@ const Homepage = ({ openNavbar }) => {
             />
           </motion.div>
         </div>
+
+        <div className="h-1/2 lg:h-full lg:w-2/6 flex sm:hidden items-center justify-center">
+  {/* Social handles */}
+  <div className="flex gap-4">
+    <Link href="https://github.com/Thunder2367shiv">
+      <Image src="/github.png" alt="GitHub" width={30} height={20} />
+    </Link>
+    <Link href="https://www.instagram.com/thunder11.21/">
+      <Image src="/instagram.png" alt="Instagram" width={30} height={20} />
+    </Link>
+    <Link href="https://www.linkedin.com/in/shivam-verma-711463257/">
+      <Image src="/linkedin.png" alt="LinkedIn" width={30} height={20} />
+    </Link>
+    <Link href="https://leetcode.com/Thunderk11/">
+      <Image src="/leetcode.png" alt="LeetCode" width={30} height={20} />
+    </Link>
+    <Link href="https://codeforces.com/profile/coder_thunder">
+      <Image src="/codeforces.png" alt="Codeforces" width={30} height={20} />
+    </Link>
+    <Link href="https://www.geeksforgeeks.org/user/shivamve16ur/">
+      <Image src="/gfg.png" alt="GFG" width={30} height={20} />
+    </Link>
+    <Link href="https://www.codechef.com/users/shivam13579ver">
+      <Image src="/codechef.jpeg" alt="CodeChef" width={30} height={20} />
+    </Link>
+    <Link href="https://www.hackerrank.com/shivamverma1022">
+      <Image src="/hackerrank.png" alt="HackerRank" width={30} height={20} />
+    </Link>
+    <Link href="https://www.codingninjas.com/studio/profile/8e0a5011-033d-441a-aa97-fe0be920bcfc">
+      <Image src="/codingninja.jpeg" alt="Coding Ninjas" width={30} height={20} />
+    </Link>
+  </div>
+</div>
+
+        
       </div>
     </motion.div>
   );
