@@ -58,8 +58,8 @@ const Navbar = () => {
       {/* LOGO */}
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <a
-          href="/resume.pdf" // Ensure the file path is correct and accessible in the `public` folder
-          download="Shivamverma_Resume.pdf" // Force download with a specified file name
+          href="/resume.docx" // Ensure the file path is correct and accessible in the `public` folder
+          download="Shivamverma_Resume.docx" // Force download with a specified file name
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center border-gray-500 border-2"
         >
           <span className="text-white mr-1">Download</span>
