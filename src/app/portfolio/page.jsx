@@ -138,7 +138,7 @@ const PortfolioPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6"
           >
             My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Projects</span>
           </motion.h1>
@@ -146,7 +146,7 @@ const PortfolioPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl mb-8 px-4"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl mb-6 md:mb-8 px-4"
           >
             Scroll down to explore my work and technical capabilities
           </motion.p>
@@ -163,7 +163,7 @@ const PortfolioPage = () => {
                 className="w-2 h-2 bg-white rounded-full"
               />
             </div>
-            <span className="mt-2 text-gray-400">Scroll down</span>
+            <span className="mt-2 text-gray-400 text-sm md:text-base">Scroll down</span>
           </motion.div>
         </div>
 
@@ -172,7 +172,7 @@ const PortfolioPage = () => {
           <motion.div style={{ x }} className="flex">
             {project_data.map((item) => (
               <div
-                className={`h-screen w-screen flex flex-col items-center justify-between bg-gradient-to-r ${item.color} p-6 md:p-12 lg:p-16 relative overflow-hidden`}
+                className={`h-screen w-screen flex flex-col items-center justify-between bg-gradient-to-r ${item.color} p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 relative overflow-hidden`}
                 key={item.id}
               >
                 {/* Animated background elements */}
@@ -207,40 +207,40 @@ const PortfolioPage = () => {
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl md:text-5xl lg:text-6xl font-bold text-center text-white z-10 mt-4 md:mt-8"
+                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center text-white z-10 mt-4 md:mt-8 px-2"
                   >
                     {item.title}
                   </motion.h1>
                 )}
 
-                <div className="flex flex-1 items-center justify-center gap-8 w-full flex-col lg:flex-row z-10 px-4 overflow-y-auto py-4">
+                <div className="flex flex-1 items-center justify-center gap-4 sm:gap-6 md:gap-8 w-full flex-col lg:flex-row z-10 px-2 sm:px-4 overflow-y-auto py-4">
                   {/* Image */}
                   {item?.img && (
                     <motion.div
                       initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.6 }}
-                      className="flex flex-col items-center w-full max-w-2xl"
+                      className="flex flex-col items-center w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl"
                     >
-                      <div className="relative w-full h-64 md:h-80 lg:h-96 xl:h-[420px] group">
+                      <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 group">
                         <Image
                           src={item.img}
                           alt="Project image"
                           fill
                           unoptimized
-                          className="rounded-xl border-4 border-gray-700 shadow-2xl transition-all duration-300 group-hover:shadow-lg group-hover:border-gray-500 object-cover"
+                          className="rounded-xl border-2 sm:border-3 md:border-4 border-gray-700 shadow-lg sm:shadow-xl md:shadow-2xl transition-all duration-300 group-hover:shadow-md group-hover:border-gray-500 object-cover"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl" />
                       </div>
 
                       {/* Buttons */}
-                      <div className="flex gap-4 mt-6">
+                      <div className="flex gap-3 sm:gap-4 mt-4 sm:mt-6">
                         {item?.githublink && (
                           <Link href={item.githublink} target="_blank">
                             <motion.button
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
-                              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all text-sm md:text-base"
+                              className="px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all text-xs sm:text-sm md:text-base"
                             >
                               View Code
                             </motion.button>
@@ -251,9 +251,9 @@ const PortfolioPage = () => {
                             <motion.button
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
-                              className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2 text-sm md:text-base"
+                              className="px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:shadow-lg transition-all flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base"
                             >
-                              {item.democheck} <span className="text-lg">→</span>
+                              {item.democheck} <span className="text-sm sm:text-base md:text-lg">→</span>
                             </motion.button>
                           </Link>
                         )}
@@ -267,9 +267,9 @@ const PortfolioPage = () => {
                       initial={{ opacity: 0, x: 50 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6 }}
-                      className="bg-black bg-opacity-40 backdrop-blur-sm p-6 rounded-xl border border-gray-700 max-w-2xl w-full"
+                      className="bg-black bg-opacity-40 backdrop-blur-sm p-4 sm:p-5 md:p-6 rounded-xl border border-gray-700 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl w-full"
                     >
-                      <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+                      <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
                         {formatDescription(item.desc)}
                       </p>
                     </motion.div>
@@ -282,7 +282,7 @@ const PortfolioPage = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="w-screen h-screen flex flex-col gap-12 md:gap-16 items-center justify-center text-center bg-gradient-to-br from-gray-900 to-black text-white overflow-hidden relative px-4">
+      <div className="w-screen h-screen flex flex-col gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center justify-center text-center bg-gradient-to-br from-gray-900 to-black text-white overflow-hidden relative px-4">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(20)].map((_, i) => (
@@ -313,7 +313,7 @@ const PortfolioPage = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold z-10"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold z-10 px-2"
         >
           Have a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">project</span> in mind?
         </motion.h1>
@@ -328,7 +328,7 @@ const PortfolioPage = () => {
             animate={{ rotate: 360 }}
             transition={{ duration: 12, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px]"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-[500px] xl:h-[500px]"
           >
             <defs>
               <path
@@ -336,7 +336,7 @@ const PortfolioPage = () => {
                 d="M 150, 150 m -65, 0 a 65,65 0 0,1 130,0 a 65,65 0 0,1 -130,0"
               />
             </defs>
-            <text fill="#fff" className="text-base md:text-lg font-semibold">
+            <text fill="#fff" className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">
               <textPath href="#circlePath" startOffset="0%">
                 Back-end Developer&#160;&#160;•&#160;&#160;Problem Solver&#160;&#160;•
               </textPath>
@@ -349,7 +349,7 @@ const PortfolioPage = () => {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg md:text-xl shadow-xl hover:shadow-2xl transition-all"
+              className="w-20 h-20 sm:w-22 sm:h-22 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg md:text-xl shadow-lg hover:shadow-xl transition-all"
             >
               Hire Me
             </motion.div>
